@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import Switch from 'react-switch'
 import { useTheme } from 'next-themes'
-import Link from 'next/link'
 import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs'
+import ResizeHook from '../../hooks/ResizeHook'
+import Links from './Links'
+import Tabs from './Tabs'
+
 const Nav = () => {
     const { theme, systemTheme, setTheme } = useTheme()
     const [ mounted, setMounted ] = useState(false)
+    const windowWidth: number = ResizeHook()
 
     useEffect(()=> {
       setMounted(true)
@@ -15,10 +19,9 @@ const Nav = () => {
     const handleToggle=()=> {
       setTheme(currentTheme === 'dark' ? 'light' : 'dark')
     }
-
   return (
     <div className='flex bg-slate-100 dark:bg-[#05011a] justify-center pt-4'>
-      <div className='flex justify-between max-w-screen-xl w-full'>
+      <div className='flex justify-between max-w-screen-xl w-full border-b border-[#180133] dark:border-white pb-2'>
         <div className='pl-4'>
           <Switch
             offColor='#180133'
@@ -27,11 +30,12 @@ const Nav = () => {
             onColor='#0d9489'
             checked={currentTheme === 'dark'} onChange={handleToggle}/>
         </div>
-        <div className='flex flex-grow-1 gap-4 justify-center pr-4'>
-          <Link className='hover:bg-sky-700 dark:hover:bg-indigo-900 dark:text-teal-600 font-bold text-lg rounded' href='/projects'>Projects</Link>
-          <Link className='hover:bg-sky-700 dark:hover:bg-indigo-900 dark:text-teal-600 font-bold text-lg rounded' href='/projects'>About</Link>
-          <Link className='hover:bg-sky-700 dark:hover:bg-indigo-900 dark:text-teal-600 font-bold text-lg rounded' href='/projects'>Contact</Link>
-        </div>
+        {
+          windowWidth && windowWidth > 768 ? 
+          <Links/>
+        :
+          <Tabs/>
+        }
       </div>
     </div>
   )
