@@ -3,10 +3,10 @@ import Tab from './Tab'
 
 const Tabs = () => {
   return (
-    <div className='grid grid-cols-3 absolute bottom-0 min-w-full'>
-        <Tab/>
-        <Tab/>
-        <Tab/>
+    <div className='grid grid-cols-3 absolute bottom-0 min-w-full border-t border-black dark:border-white p-2'>
+        <Tab route={'projects'}/>
+        <Tab route={'about'}/>
+        <Tab route={'contact'}/>
     </div>
   )
 }
