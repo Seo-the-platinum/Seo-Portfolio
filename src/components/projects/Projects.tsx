@@ -11,7 +11,7 @@ const Projects = () => {
         </div>
         <div className='flex flex-col gap-2 items-center w-72 border-violet-900 rounded border-2'>
             <h3 className='dark:text-slate-300'>Voice Actor Portfolio</h3>
-            {/* <Image src={voicePic} alt='gif of voice actor site'/> */}
+            <p>I am only adding this to test that I can still commit</p>
         </div>
     </div>
   )
