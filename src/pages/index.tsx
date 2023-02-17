@@ -1,7 +1,8 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
+import Button from '../components/global/Button'
 import About from '../components/about/About'
+import Projects from '../components/projects/Projects'
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,8 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex flex-col items-center justify-center bg-slate-100 dark:bg-[#05011a]">
         <About/>
+        <Projects/>
+        <Button route={'projects'}/>
       </main>
     </>
   );
