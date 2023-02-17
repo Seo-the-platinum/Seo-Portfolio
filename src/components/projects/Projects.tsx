@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-// import voicePic from '../../../public/images/voice.png'
+import voiceActor from '../../../public/images/voiceActor.png'
 
 const Projects = () => {
   return (
@@ -11,7 +11,7 @@ const Projects = () => {
         </div>
         <div className='flex flex-col gap-2 items-center w-72 border-violet-900 rounded border-2'>
             <h3 className='dark:text-slate-300'>Voice Actor Portfolio</h3>
-            <p>I am only adding this to test that I can still commit</p>
+            <Image src={voiceActor} alt='gif of voice actor site'/>
         </div>
     </div>
   )
