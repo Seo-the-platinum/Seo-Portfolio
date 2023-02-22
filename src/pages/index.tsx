@@ -5,9 +5,11 @@ import About from '../components/about/About'
 import Carousel from "../components/carousel/Carousel";
 import Project from '../components/projects/Project'
 import Image from 'next/image'
+import voice from '../../public/images/voice.png'
+import ffvote from '../../public/images/ffvote.png'
 
 const Home: NextPage = () => {
-  // const slides = projects.map(project=> <Project key={project.title} project={project}/>)
+  const slides = [voice, ffvote]
   return (
     <>
       <Head>
@@ -18,9 +20,9 @@ const Home: NextPage = () => {
       <main className="flex flex-col items-center justify-center bg-slate-100 dark:bg-[#05011a]">
         <About/>
         <div className='max-w-lg'>
-          {/* <Carousel>
-            {projects.map(project=> <Image key={project.title} src={project.source} alt={project.title}/>)}
-          </Carousel> */}
+          <Carousel>
+            {slides.map(slide=> <Image src={slide}/>)}
+          </Carousel>
         </div>
         <Button route={'projects'}/>
       </main>
