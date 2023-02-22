@@ -2,9 +2,13 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Button from '../components/global/Button'
 import About from '../components/about/About'
-import Projects from '../components/projects/Projects'
+import Carousel from "../components/carousel/Carousel";
+import { projects } from '../utils/projects'
+import Project from '../components/projects/Project'
+import Image from 'next/image'
 
 const Home: NextPage = () => {
+  const slides = projects.map(project=> <Project key={project.title} project={project}/>)
   return (
     <>
       <Head>
@@ -14,7 +18,11 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex flex-col items-center justify-center bg-slate-100 dark:bg-[#05011a]">
         <About/>
-        <Projects/>
+        <div className='max-w-lg'>
+          <Carousel>
+            {projects.map(project=> <Image key={project.title} src={project.source} alt={project.title}/>)}
+          </Carousel>
+        </div>
         <Button route={'projects'}/>
       </main>
     </>
