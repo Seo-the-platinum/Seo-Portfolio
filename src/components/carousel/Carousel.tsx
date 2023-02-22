@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import Project from '../../components/projects/Project'
 
 const Carousel = ({ children: slides }) => {
     const [ curr, setCurr ] = useState(0)
