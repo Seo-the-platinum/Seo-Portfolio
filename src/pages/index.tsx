@@ -3,7 +3,6 @@ import Head from "next/head";
 import Button from '../components/global/Button'
 import About from '../components/about/About'
 import Carousel from "../components/carousel/Carousel";
-import Project from '../components/projects/Project'
 import Image from 'next/image'
 import voice from '../../public/images/voice.png'
 import ffvote from '../../public/images/ffvote.png'
@@ -21,7 +20,7 @@ const Home: NextPage = () => {
         <About/>
         <div className='max-w-lg'>
           <Carousel>
-            {slides.map(slide=> <Image src={slide}/>)}
+            {slides.map((slide, index)=> <Image key={index} src={slide} alt='project thumbnail'/>)}
           </Carousel>
         </div>
         <Button route={'projects'}/>
