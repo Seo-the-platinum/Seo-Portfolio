@@ -3,12 +3,11 @@ import Head from "next/head";
 import Button from '../components/global/Button'
 import About from '../components/about/About'
 import Carousel from "../components/carousel/Carousel";
-import Image from 'next/image'
-import voice from '../../public/images/voice.png'
-import ffvote from '../../public/images/ffvote.png'
+import { projects } from '../utils/projects'
+import Project from '../components/projects/Project'
 
 const Home: NextPage = () => {
-  const slides = [voice, ffvote]
+  const slides = projects.map(project=> <Project key={project.title} project={project}/>)
   return (
     <>
       <Head>
@@ -20,7 +19,7 @@ const Home: NextPage = () => {
         <About/>
         <div className='max-w-lg'>
           <Carousel>
-            {slides.map((slide, index)=> <Image key={index} src={slide} alt='project thumbnail'/>)}
+            {slides}
           </Carousel>
         </div>
         <Button route={'projects'}/>

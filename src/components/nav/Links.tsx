@@ -23,7 +23,7 @@ const Links = () => {
           hover:scale-125
           dark:hover:text-teal-200
           dark:text-teal-600 
-          font-bold text-lg hover:animate-pulse' href='/projects'>Contact</Link>
+          font-bold text-lg hover:animate-pulse' href='#contact'>Contact</Link>
     </div>
   )
 }
