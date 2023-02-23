@@ -1,6 +1,5 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Button from '../components/global/Button'
 import About from '../components/about/About'
 import Carousel from "../components/carousel/Carousel";
 import { projects } from '../utils/projects'
@@ -22,7 +21,6 @@ const Home: NextPage = () => {
             {slides}
           </Carousel>
         </div>
-        <Button route={'projects'}/>
       </main>
     </>
   );

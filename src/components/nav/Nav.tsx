@@ -20,7 +20,7 @@ const Nav = () => {
       setTheme(currentTheme === 'dark' ? 'light' : 'dark')
     }
   return (
-    <div className='flex bg-slate-100 dark:bg-[#05011a] justify-center pt-4'>
+    <div className='flex bg-slate-100 dark:bg-[#05011a] justify-center pt-4 z-10'>
       <div className='flex justify-between max-w-screen-xl w-full md:border-b border-[#180133] md:dark:border-white pb-2'>
         <div className='pl-4'>
           <Switch
