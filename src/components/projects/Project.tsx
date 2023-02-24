@@ -11,7 +11,7 @@ type Project = {
 }
 const Project = ({ project }: Project) => {
   return (
-    <Link className='flex flex-col min-w-full hover:brightness-110' href={`/project/${project.title}`}>
+    <Link className='flex flex-col min-w-full hover:brightness-110 dark:bg-[#150726] p-0.5' href={`/project/${project.title}`}>
         <h2 className='dark:text-slate-300'>{`${project.title}`}</h2>
         <Image src={project.source} alt={`${project.title} thumbnail`}/>
     </Link>

@@ -16,11 +16,10 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex flex-col items-center justify-center bg-slate-100 dark:bg-[#05011a]">
         <About/>
-        <div className='max-w-lg'>
-          <Carousel>
-            {slides}
-          </Carousel>
-        </div>
+        <h3 className='mt-8 text-slate-300 text-xl'>My Projects</h3>
+        <Carousel>
+          {slides}
+        </Carousel>
       </main>
     </>
   );
