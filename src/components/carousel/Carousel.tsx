@@ -17,9 +17,11 @@ const Carousel = ({ children: slides }: Slides) => {
     },[])
   return (
     <div className='overflow-hidden relative mb-14 mt-8 dark:bg-[#150726] group p-0.5 hover:scale-110 transition-hover duration-500 rounded max-w-xl' id='projects'>
-      <div className='absolute group-hover:animate-spin-slow dark:group-hover:bg-gradient-to-tr from-purple-700 to-teal-600 opacity-60
+      <div className='absolute group-hover:animate-spin-slow dark:group-hover:bg-gradient-to-r from-violet-900 to-emerald-400 opacity-60
         group-hover:opacity-100
         group-hover:duration-500
+        dark:grouphover:drop-shadow
+        dark:group-hover:brightness-125 dark:group-hover:blur
          transition-all duration-1000' style={{height: '200%', width: '50%',left:'25%', top:'-50%'}}/>
       <div
           className="flex transition-transform ease-out duration-1000"
@@ -30,15 +32,15 @@ const Carousel = ({ children: slides }: Slides) => {
         <div className="absolute inset-0 flex items-center justify-between p-4 pointer-events-none">
           <button
             onClick={prev}
-            className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white pointer-events-auto"
+            className="p-1 rounded-full shadow bg-slate-300 text-gray-800 hover:bg-slate-200 pointer-events-auto"
           >
-            <BsChevronLeft size={40} />
+            <BsChevronLeft size={40} color='#150726'/>
           </button>
           <button
             onClick={next}
-            className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white pointer-events-auto"
+            className="p-1 rounded-full shadow bg-slate-300 text-gray-800 hover:bg-slate-200 pointer-events-auto"
           >
-            <BsChevronRight size={40} />
+            <BsChevronRight size={40} color='#150726'/>
           </button>
           <div className="absolute bottom-4 right-0 left-0">
             <div className="flex items-center justify-center gap-2">
@@ -46,7 +48,7 @@ const Carousel = ({ children: slides }: Slides) => {
               <div
                 key={i}
                 className={`
-                transition-all w-3 h-3 bg-white rounded-full
+                transition-all w-3 h-3 bg-slate-300 rounded-full
                 ${curr === i ? "p-2" : "bg-opacity-50"}
               `}
               />

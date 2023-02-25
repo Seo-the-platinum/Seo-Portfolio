@@ -10,7 +10,7 @@ const Links = () => {
           hover:scale-125
           dark:hover:text-teal-200
           dark:text-teal-600 
-          font-bold text-lg hover:animate-pulse' href='/projects'>Projects</Link>
+          font-bold text-lg hover:animate-pulse' href='#projects'>Projects</Link>
         <Link
           className='transition-all duration-500
           hover:-translate-y-2

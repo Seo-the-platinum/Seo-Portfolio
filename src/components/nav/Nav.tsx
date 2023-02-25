@@ -20,16 +20,14 @@ const Nav = () => {
       setTheme(currentTheme === 'dark' ? 'light' : 'dark')
     }
   return (
-    <div className='flex bg-slate-100 dark:bg-[#05011a] justify-center pt-4 z-10'>
-      <div className='flex justify-between max-w-screen-xl w-full md:border-b border-[#180133] md:dark:border-white pb-2'>
-        <div className='pl-4'>
-          <Switch
-            offColor='#180133'
-            checkedIcon={<BsFillSunFill color={'black'} size='1.5rem' style={{paddingLeft: '.5rem'}}/>}
-            uncheckedIcon={<BsFillMoonFill color={'#0d9489'} size='1.5rem' style={{paddingLeft: '.5rem'}}/>}
-            onColor='#0d9489'
-            checked={currentTheme === 'dark'} onChange={handleToggle}/>
-        </div>
+    <div className='flex bg-slate-300 dark:bg-[#05011a] justify-center pt-4 z-10'>
+      <div className='flex justify-between max-w-screen-xl w-full md:border-b border-[#180133] md:dark:border-violet-900 pb-2'>
+        <Switch
+          offColor='#180133'
+          checkedIcon={<BsFillSunFill color={'black'} size='1.5rem' style={{paddingLeft: '.5rem'}}/>}
+          uncheckedIcon={<BsFillMoonFill color={'#0d9489'} size='1.5rem' style={{paddingLeft: '.5rem'}}/>}
+          onColor='#0d9489'
+          checked={currentTheme === 'dark'} onChange={handleToggle}/>
         {
           windowWidth && windowWidth > 767 ? 
           <Links/>
