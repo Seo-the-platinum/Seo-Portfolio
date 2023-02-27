@@ -15,6 +15,7 @@ const Carousel = ({ children: slides }: Slides) => {
         const slideInterval = setInterval(next, 3000)
         return () => clearInterval(slideInterval)
     },[])
+
   return (
     <div className='overflow-hidden relative mb-14 mt-8 dark:bg-[#150726] group p-0.5 hover:scale-110 transition-hover duration-500 rounded max-w-xl' id='projects'>
       <div className='absolute group-hover:animate-spin-slow dark:group-hover:bg-gradient-to-r from-violet-900 to-emerald-400 opacity-60

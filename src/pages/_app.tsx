@@ -7,7 +7,7 @@ import ResizeHook from "../hooks/ResizeHook";
 const MyApp: AppType = ({ Component, pageProps }) => {  
   return (
     <ThemeProvider enableSystem={true} attribute='class'>
-      <div className='flex flex-col min-h-screen bg-slate-300 dark:bg-[#05011a] px-4'>
+      <div className='flex flex-col min-h-screen min-w-full bg-slate-300 dark:bg-[#05011a] px-4'>
         <Nav/>
         <Component {...pageProps}/>
       </div>

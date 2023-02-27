@@ -9,7 +9,7 @@ const Contact = () => {
         dark:grouphover:drop-shadow
         group-hover:opacity-100
         group-hover:duration-500
-         transition-all duration-1000' style={{ height: '50%', width: '110%',left:'-2%', top: '20%'}}/>
+         transition-all duration-1000' style={{ height: '50%', width: '110%',left:'-2%', top: '20%' }}/>
          <div className='relative rounded flex justify-center gap-12 dark:bg-[#150726] p-4 items-center space-between max-w-7xl' id='contact'>
             <a href='https://github.com/Seo-the-platinum'>
                 <BsGithub size='2em' color='#0d9488'/>
