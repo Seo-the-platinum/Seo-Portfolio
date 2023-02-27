@@ -7,7 +7,7 @@ type Route ={
 const Tab = ({ route }: Route) => {
   return (
     <div className='text-center'>
-        <Link className='dark:text-teal-700 font-bold md:text-xl' href={`/#${route}`}>
+        <Link className='dark:text-teal-700 font-bold md:text-xl' href={`/#${route}`} scroll={false}>
             { `${route.slice(0,1).toUpperCase()}${route.slice(1)}` }
         </Link>
     </div>

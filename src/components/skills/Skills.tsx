@@ -6,7 +6,7 @@ import { TbBrandNextjs } from 'react-icons/tb'
 
 const Skills = () => {
   return (
-    <div className='dark:bg-[#150726] flex flex-col mt-8'>
+    <div className='dark:bg-[#150726] flex flex-col mt-8 md:mt-0'>
         <h3 className='text-xl dark:text-slate-300 py-4'>Some Tech I Work With</h3>
         <div className='grid grid-cols-4'>
             <div className='flex flex-col items-center'>
