@@ -17,12 +17,13 @@ const Carousel = ({ children: slides }: Slides) => {
     },[])
 
   return (
-    <div className='overflow-hidden relative mb-14 mt-8 dark:bg-[#150726] group p-0.5 hover:scale-110 transition-hover duration-500 rounded max-w-xl' id='projects'>
-      <div className='absolute group-hover:animate-spin-slow dark:group-hover:bg-gradient-to-r from-violet-900 to-emerald-400 opacity-60
+    <div className='overflow-hidden relative mb-14 mt-8 group p-0.5 hover:scale-110 transition-hover duration-500 rounded max-w-2xl' id='projects'>
+      <div className='absolute group-hover:animate-spin-slow group-hover:dark:bg-gradient-to-t dark:from-violet-900 dark:to-emerald-400
         group-hover:opacity-100
         group-hover:duration-500
-        dark:grouphover:drop-shadow
-        dark:group-hover:brightness-125 dark:group-hover:blur
+        group-hover:brightness-125 group-hover:blur
+        group-hover:bg-gradient-to-t from-amber-300 to-sky-500
+        saturate-150
          transition-all duration-1000' style={{height: '200%', width: '50%',left:'25%', top:'-50%'}}/>
       <div
           className="flex transition-transform ease-out duration-1000"
