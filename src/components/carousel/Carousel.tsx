@@ -34,13 +34,13 @@ const Carousel = ({ children: slides }: Slides) => {
         <div className="absolute inset-0 flex items-center justify-between p-4 pointer-events-none">
           <button
             onClick={prev}
-            className="p-1 rounded-full shadow bg-slate-300 text-gray-800 hover:bg-slate-200 pointer-events-auto"
+            className="p-1 rounded-full shadow bg-yellow-200 hover:bg-yellow-300 dark:bg-slate-300 text-gray-800 dark:hover:bg-slate-200 pointer-events-auto"
           >
             <BsChevronLeft size={40} color='#150726'/>
           </button>
           <button
             onClick={next}
-            className="p-1 rounded-full shadow bg-slate-300 text-gray-800 hover:bg-slate-200 pointer-events-auto"
+            className="p-1 rounded-full shadow bg-yellow-200 hover:bg-yellow-300 dark:bg-slate-300 text-gray-800 dark:hover:bg-slate-200 pointer-events-auto"
           >
             <BsChevronRight size={40} color='#150726'/>
           </button>
@@ -50,7 +50,7 @@ const Carousel = ({ children: slides }: Slides) => {
               <div
                 key={i}
                 className={`
-                transition-all w-3 h-3 bg-slate-300 rounded-full
+                transition-all w-3 h-3 bg-yellow-200 dark:bg-slate-300 rounded-full
                 ${curr === i ? "p-2" : "bg-opacity-50"}
               `}
               />

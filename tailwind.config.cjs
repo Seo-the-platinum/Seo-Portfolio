@@ -16,13 +16,13 @@ module.exports = {
         'fadeFromRight': {
           '0%': {opacity: 0, right: '-100%'},
           '100%': {opacity: 1, right:'0%'},
-        }
+        },
       },
       animation: {
         'spin-slow': 'spin 5s linear infinite',
         'fadeIn': 'fadeIn 5s ease',
         'fadeFromLeft': 'fadeFromLeft 1s ease-out',
-        'fadeFromRIght': 'fadeFromRight 1s ease-out'
+        'fadeFromRIght': 'fadeFromRight 1s ease-out',
       },
     },
   },
