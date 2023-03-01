@@ -21,47 +21,48 @@ const skills = {
 }
 
 const Project = () => {
-    const router = useRouter()
-    const { query } = router
-    const project = projects.find(project=> project.title === query.project)
-    if (!project) return null
+  const router = useRouter()
+  const { query } = router
+  const project = projects.find(project=> project.title === query.project)
+  if (!project) return null
+
   return (
-    <div className='flex flex-col items-center font-serif mb-12 md:mt-8'>
-      <div className='relative group p-0.5 mt-2 overflow-hidden hover:scale-110 transition-hover duration-500 rounded'id='about'>
-      <div className='absolute group-hover:animate-spin-slow dark:group-hover:bg-gradient-to-r dark:from-violet-900 dark:to-emerald-400
-        group-hover:duration-500
-        group-hover:brightness-125 group-hover:blur rounded
-        group-hover:bg-gradient-to-t from-amber-300 to-sky-500
-        saturate-150
-         transition-all ' style={{height: '170%', width: '50%',left:'25%', top:'-30%'}}/>
-         <div className='flex flex-col relative p-4 dark:bg-[#150726] bg-cyan-100 rounded'>
-          <h1 className='dark:text-slate-300 text-sky-900 text-4xl mb-4' >{project.title}</h1>
-          <Image className='max-w-full md:max-w-lg animate-fadeIn md:self-center' src={project.source} alt={`${project.title} thumbnail`}/>
-          <div className='sm:flex sm:flex-row max-w-3xl sm:justify-evenly sm:mt-8'>
-            <div className='my-8 animate-fadeFromLeft relative md:text-center'>
-              <h3 className='text-sky-900 dark:text-slate-300 text-2xl my-4'>The Tech</h3>
-              <div className='grid grid-cols-2 md:grid-cols-3'>
-                { project.tech.map((skill, i)=> (<div key={skill} className='flex flex-col my-2 md:p-0 items-center'>
-                  {skills[skill as keyof typeof skills]}
-                  <h3>{project.tech[i]}</h3>
-                </div>))}
-              </div>
-            </div>
-            <div className="my-8 relative animate-fadeFromRIght sm:max-w-1/4">
-              <h3 className='text-sky-900 dark:text-slate-300 text-2xl my-4'>Where To See More</h3>
-              <div className='flex gap-4 justify-evenly items-center'>
-                <a className='hover:scale-125 transform-all duration-500' href={project.github}>
-                  <BsGithub className='fill-cyan-500 hover:fill-cyan-700 dark:fill-teal-500 dark:hover:fill-teal-400' size='2rem'/>
-                </a>
-                <Button route={project.url}/>
-              </div>
-            </div>
-            <div className='my-8 animate-fadeIn sm:w-1/4'>
-              <h3 className='text-sky-900 dark:text-slate-300 text-2xl my-4'>Why I Built It</h3>
-              <p className='text-sky-900 dark:text-slate-300 text-sm leading-relaxed'>{ project.description }</p>
+    <div className='flex flex-col items-center mt-4 lg:mt-12'>
+      <div className='flex flex-col overflow-hidden relative sm:w-3/6 lg:w-2/6 p-0.5 rounded hover:scale-110 transition-hover hover:-translate-y-4 duration-500 ease-in-out peer/shadow'>
+        <Image className=' md:self-center rounded z-10 peer/image' src={project.source} alt={`${project.title} thumbnail`}/>
+        <div className='absolute peer-hover/image:animate-spin-slow dark:peer-hover/image:bg-gradient-to-r dark:from-violet-900 dark:to-emerald-400
+          peer-hover/image:duration-500
+          peer-hover/image:brightness-125 peer-hover/image:blur rounded
+          peer-hover/image:bg-gradient-to-r from-amber-300 to-sky-500
+          saturate-150' style={{height: '50%', width: '120%',left:'-10%', top:'20%'}}/>
+      </div>
+      <div className='hidden sm:block
+        peer-hover/shadow:scale-150 peer-hover/shadow:-translate-y-8
+        content-[""] mt-8 lg:mt-20 rounded-full bg-sky-900 dark:bg-violet-900 dark:opacity-20 opacity-60
+        blur-lg sm:w-2/6 h-20 duration-500 ease-in-out'/>
+      <div className='sm:justify-evenly sm:mt-8 flex flex-col mb-10 sm:flex-row relative overflow-hidden'>
+          <div className='sm:my-8 sm:animate-fadeFromLeft relative md:text-center my-2 flex flex-col sm:w-1/4 md:w-2/6'>
+            <h3 className='text-sky-900 dark:text-slate-300 text-2xl my-4'>The Tech</h3>
+            <div className='grid grid-cols-2 md:grid-cols-3'>
+              { project.tech.map((skill, i)=> (<div key={skill} className='flex flex-col my-2 md:p-0 items-center'>
+                {skills[skill as keyof typeof skills]}
+                <h3>{project.tech[i]}</h3>
+              </div>))}
             </div>
           </div>
-         </div>
+          <div className="sm:my-8 relative sm:animate-fadeIn sm:w-1/4 md:w-2/6 my-2 flex flex-col md:text-center">
+            <h3 className='text-sky-900 dark:text-slate-300 text-2xl my-4'>Where To See More</h3>
+            <div className='flex gap-4 justify-evenly items-center'>
+              <a className='hover:scale-125 transform-all duration-500' href={project.github}>
+                <BsGithub className='fill-sky-900 hover:fill-sky-600 dark:fill-emerald-500 dark:hover:fill-emerald-400' size='2rem'/>
+              </a>
+              <Button route={project.url}/>
+            </div>
+          </div>
+          <div className='sm:my-8 my-2 relative md:animate-fadeFromRight sm:w-1/4 md:w-2/6'>
+            <h3 className='text-sky-900 dark:text-slate-300 text-2xl my-4'>Why I Built It</h3>
+            <p className='text-sky-900 dark:text-slate-300 text-sm leading-relaxed'>{ project.description }</p>
+          </div>
       </div>
     </div>
   )

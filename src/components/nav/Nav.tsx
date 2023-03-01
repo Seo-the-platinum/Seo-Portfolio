@@ -5,6 +5,7 @@ import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs'
 import ResizeHook from '../../hooks/ResizeHook'
 import Links from './Links'
 import Tabs from './Tabs'
+import Social from './Social'
 
 const Nav = () => {
     const { theme, systemTheme, setTheme } = useTheme()
@@ -28,12 +29,15 @@ const Nav = () => {
           uncheckedIcon={<BsFillMoonFill color={'#0d9489'} size='1.5rem' style={{paddingLeft: '.5rem'}}/>}
           onColor='#0d9489'
           checked={currentTheme === 'dark'} onChange={handleToggle}/>
-        {
-          windowWidth && windowWidth > 767 ? 
-          <Links/>
-        :
-          <Tabs/>
-        }
+        <div className='flex justify-evenly gap-14 items-center'>
+          {
+            windowWidth && windowWidth > 767 ? 
+            <Links/>
+          :
+            <Tabs/>
+          }
+          <Social/>
+        </div>
       </div>
     </div>
   )

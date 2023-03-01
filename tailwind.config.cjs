@@ -21,8 +21,8 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 5s linear infinite',
         'fadeIn': 'fadeIn 5s ease',
-        'fadeFromLeft': 'fadeFromLeft 1s ease-out',
-        'fadeFromRIght': 'fadeFromRight 1s ease-out',
+        'fadeFromLeft': 'fadeFromLeft 2s ease-out',
+        'fadeFromRight': 'fadeFromRight 2s ease-out',
       },
     },
   },

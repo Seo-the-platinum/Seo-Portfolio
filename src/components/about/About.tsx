@@ -5,7 +5,7 @@ import ResizeHook from '../../hooks/ResizeHook'
 const About = () => {
   const windowSize = ResizeHook()
   return (
-    <div className='relative group p-0.5 overflow-hidden hover:scale-110 transition-hover duration-500 rounded'id='about'>
+    <div className='relative group p-0.5 overflow-hidden hover:scale-110 transition-hover duration-500 rounded md:mt-4'id='about'>
       <div className='absolute group-hover:animate-spin-slow dark:group-hover:bg-gradient-to-r dark:from-violet-900 dark:to-emerald-400 opacity-60
         group-hover:bg-gradient-to-r from-amber-300 to-sky-500
         group-hover:opacity-100
