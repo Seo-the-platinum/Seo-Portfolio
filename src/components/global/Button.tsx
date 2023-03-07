@@ -15,9 +15,9 @@ const Button = ({ route }: Route) => {
       rounded dark:bg-violet-900
     dark:hover:bg-violet-800 hover:scale-110 
       transition-scale duration-500 flex items-center p-1
-    dark:active:bg-violet-700' href={route}>
+    dark:active:bg-violet-700 ' href={route}>
       <BsEye className='fill-sky-900 group-hover/button:fill-sky-600 dark:fill-emerald-500 dark:group-hover/button:fill-emerald-400 pr-1'size='2rem'/>
-      <p className='text-sky-900  group-hover/button:text-sky-600 dark:text-emerald-500 dark:group-hover/button:text-emerald-400 pl-2' > See The Site</p>
+      <p className='text-sky-900  group-hover/button:text-sky-600 dark:text-emerald-500 dark:group-hover/button:text-emerald-400 pl-2 sm:text-xs md:text-base' > See The Site</p>
     </Link>
   )
 }

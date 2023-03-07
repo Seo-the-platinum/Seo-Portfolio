@@ -11,11 +11,12 @@ export const projects = [
         url: 'https://marcelovoice.netlify.app/',
     },
     {
-        description: `A website to determine once and for all who is the best Final Fantasy Charater and Game! Users can vote for any character and game and check the results.`,
-        github: "https://github.com/Seo-the-platinum/ffvote",
+        description: `A website to determine once and for all who the best Final Fantasy character and best game are! 
+            Users can vote for their favorite character and game and watch them climb the leader board.`,
+        github: "https://github.com/Seo-the-platinum/finalfantasyfanvote",
         source: ffvote,
         tech: ['react','nextjs', 'typescript', 'postgresql', 'prisma', 'tailwind' ],
-        title: 'Final Fantasy Vote',
-        url: 'https://google.com/'
+        title: 'Final Fantasy Fan Vote',
+        url: 'https://finalfantasyfanvote.vercel.app/'
     }
 ]

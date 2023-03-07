@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Switch from 'react-switch'
 import { useTheme } from 'next-themes'
-import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs'
+// import { BsFillSunFill, BsFillMoonFill, BsCloudSun } from 'react-icons/bs'
+import { WiDayCloudy, WiMeteor } from "react-icons/wi";
 import ResizeHook from '../../hooks/ResizeHook'
 import Links from './Links'
 import Tabs from './Tabs'
@@ -24,11 +25,15 @@ const Nav = () => {
     <div className='flex bg-cyan-50 dark:bg-[#05011a] justify-center pt-4 z-10'>
       <div className='flex justify-between max-w-screen-xl w-full md:border-b border-[#180133] md:dark:border-violet-900 md:border-amber-300 pb-2'>
         <Switch
+          checked={currentTheme === 'dark'} 
+          checkedIcon={<WiDayCloudy className='fill-amber-300' size='1.75rem' style={{paddingLeft: '.5rem'}}/>}
           offColor='#180133'
-          checkedIcon={<BsFillSunFill color={'black'} size='1.5rem' style={{paddingLeft: '.5rem'}}/>}
-          uncheckedIcon={<BsFillMoonFill color={'#0d9489'} size='1.5rem' style={{paddingLeft: '.5rem'}}/>}
-          onColor='#0d9489'
-          checked={currentTheme === 'dark'} onChange={handleToggle}/>
+          offHandleColor='#ecfeff'
+          onChange={handleToggle}
+          onColor='#ecfeff'
+          onHandleColor='#180133'
+          uncheckedIcon={<WiMeteor className='fill-emerald-500' size='1.75rem' style={{paddingLeft: '.25rem'}}/>}
+        />
         <div className='flex justify-evenly gap-14 items-center'>
           {
             windowWidth && windowWidth > 767 ? 

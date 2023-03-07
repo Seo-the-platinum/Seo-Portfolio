@@ -22,7 +22,7 @@ const Carousel = ({ children: slides }: Slides) => {
         group-hover:opacity-100
         group-hover:duration-500
         group-hover:brightness-125 group-hover:blur
-        group-hover:bg-gradient-to-t from-amber-300 to-sky-500
+        group-hover:bg-gradient-to-t from-amber-300 to-sky-600
         saturate-150
          transition-all duration-1000' style={{height: '200%', width: '50%',left:'25%', top:'-50%'}}/>
       <div
