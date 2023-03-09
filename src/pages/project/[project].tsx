@@ -39,8 +39,8 @@ const Project = () => {
       </div>
       <div className='hidden sm:block
         peer-hover/shadow:scale-150 peer-hover/shadow:-translate-y-8
-        content-[""] mt-8 lg:mt-20 rounded-full bg-sky-300 dark:bg-violet-900 dark:opacity-20 opacity-60
-        blur-lg sm:w-2/6 h-20 duration-500 ease-in-out'/>
+        content-[""] mt-4 rounded-full bg-sky-300 dark:bg-violet-900 dark:opacity-20 opacity-60
+        blur-lg sm:w-2/6 lg:w-1/4 h-20 duration-500 ease-in-out'/>
       <div className='sm:justify-evenly sm:mt-8 flex flex-col mb-10 sm:flex-row relative overflow-hidden'>
           <div className='sm:my-8 sm:animate-fadeFromLeft relative md:text-center my-2 flex flex-col sm:w-1/4 md:w-2/6'>
             <h3 className='text-sky-900 dark:text-slate-300 text-2xl my-4'>The Tech</h3>
