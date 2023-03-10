@@ -23,7 +23,7 @@ const Nav = () => {
     }
   return (
     <div className='flex bg-cyan-50 dark:bg-[#05011a] justify-center pt-4 z-10'>
-      <div className='flex justify-between max-w-screen-xl w-full md:border-b border-[#180133] md:dark:border-violet-900 md:border-amber-300 pb-2'>
+      <div className='flex md:border-b border-[#180133] max-w-7xl md:dark:border-violet-900 w-full md:border-amber-300 pb-2 justify-between'>
         <Switch
           checked={currentTheme === 'dark'} 
           checkedIcon={<WiDayCloudy className='fill-amber-300' size='1.75rem' style={{paddingLeft: '.5rem'}}/>}

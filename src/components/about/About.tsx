@@ -5,8 +5,9 @@ import Link from 'next/link'
 const About = () => {
   const windowSize = ResizeHook()
   return (
-    <div className='relative group p-0.5 overflow-hidden hover:scale-110 transition-hover duration-500 rounded md:mt-4'id='about'>
-      <div className='absolute group-hover:animate-spin-slow dark:group-hover:bg-gradient-to-r dark:from-violet-900 dark:to-emerald-400 opacity-60
+    <div className='relative group p-0.5 overflow-hidden sm:hover:scale-110 transition-hover duration-500 rounded md:mt-4'id='about'>
+      <div className=' hidden sm:block
+        absolute group-hover:animate-spin-slow dark:group-hover:bg-gradient-to-r dark:from-violet-900 dark:to-emerald-400 opacity-60
         group-hover:bg-gradient-to-r from-amber-300 to-sky-600
         group-hover:opacity-100
         group-hover:duration-500
@@ -18,7 +19,7 @@ const About = () => {
           <h2 className='dark:text-slate-300 md:w-4/5 leading-8 text-sky-800'>
             <span className='dark:text-violet-900 italic font-semibold text-cyan-400 text-xl'>F</span><span className='italic'>ull stack</span> developer with <br/>
             <span className='dark:text-violet-900 italic font-semibold text-cyan-400 text-xl'>P</span><span className='italic'>ositivity</span>,
-            <span className='dark:text-violet-900 italic font-semibold text-cyan-400 text-xl'>H</span>
+            <span className='dark:text-violet-900 italic font-semibold text-cyan-400 text-xl'> H</span>
             <span className='italic'>umility</span>, and a passion to <span className='dark:text-violet-900 italic font-semibold text-cyan-400 text-xl'>L</span>
             <span className='italic'>evel up</span>
           </h2>
