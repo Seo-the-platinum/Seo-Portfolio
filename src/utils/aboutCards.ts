@@ -1,20 +1,20 @@
 export const cards = [
   {
-    details: "Gaming, working out, and rocking out on my drumset are some of my favorite things to do. My favorite game is Final Fantasy 7 and my favorite band is Blink 182.",
-    keyArt: '/images/tifaKeyArt.jpg',
+    details: "In my spare time, I enjoy exercising, playing video games, and rocking out on my drumset. My favorite game is Final Fantasy 7 and my favorite band is Blink 182.",
+    keyArt: '/images/drums.jpeg',
     title: 'Hobbies'
   },
   {
-    details: `I want to work with great people in a great environment where I can grow as well as make valuable contributions.
-        Eventually I'd like to be in a leadership position and be someone that my peers and employer are proud to work with.
-    `,
-    keyArt: '/images/sephirothKeyArt.png',
-    title: 'Goals'
+    details: `I am a career changer who discovered a passion for programming and obtained a few nano degrees while working full time. 
+    In 2022 I decided to leave my position with my previous employer because I did not want to regret not taking a chance to land a position in software development.`,
+    keyArt: '/images/code.jpg',
+    title: 'My Story'
   },
   {
-    details: `I am a career changer who discovered a passion for programming and obtained a few nano degrees while working full time. 
-    In 2022 I decided to leave my position with my previous employer to fully commit to my pursuit of a career in software development.`,
-    keyArt: '/images/cloudKeyArt.jpeg',
-    title: 'My Story'
+    details: `Culture is a key contributor to an employees happiness and I would love to work somewhere I can not only learn from others but also establish lasting relationships.
+      I want to be the best developer I can be and eventually see myself in a leadership position where I can mentor those who were once in my position.
+    `,
+    keyArt: '/images/goal.jpg',
+    title: 'Goals'
   },
 ]

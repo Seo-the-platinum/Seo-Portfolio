@@ -37,8 +37,8 @@ const Project = () => {
           peer-hover/image:bg-gradient-to-r from-amber-300 to-sky-600
           saturate-150' style={{height: '50%', width: '120%',left:'-10%', top:'20%'}}/>
       </div>
-      <div className='hidden sm:block
-        peer-hover/shadow:scale-150 peer-hover/shadow:-translate-y-8
+      <div className='hidden sm:block relative
+        peer-hover/shadow:scale-150 peer-hover/shadow:-translate-y-2
         content-[""] mt-10 rounded-full bg-sky-300 dark:bg-violet-900 dark:opacity-20 opacity-60
         blur-lg sm:w-2/6 lg:w-1/4 h-20 duration-500 ease-in-out'/>
       <div className='sm:justify-evenly sm:mt-8 flex flex-col mb-10 sm:flex-row relative overflow-hidden'>

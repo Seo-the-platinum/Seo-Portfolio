@@ -27,7 +27,7 @@ const AboutCard = ({ title, keyArt, details}: CardProps) => {
         style={{backgroundImage: `url(${keyArt})`}}
         >
         <div className='flex flex-col min-w-full overflow-hidden rounded-lg relative min-h-full'>
-            <h1 className='text-4xl text-slate-300 self-center'>{title}</h1>
+            <h1 className='text-4xl text-slate-300 self-center bg-slate-900/50 min-w-full text-center'>{title}</h1>
             <div className={` ${showDetails ? 'rounded-lg bottom-0 lg:-bottom-12 bg-black/80' : '-bottom-full mb-8 bg-black/40'}
                 flex flex-col min-w-full 
                 min-h-full
