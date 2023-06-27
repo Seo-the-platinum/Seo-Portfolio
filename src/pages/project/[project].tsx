@@ -51,15 +51,17 @@ const Project = () => {
               </div>))}
             </div>
           </div>
-          <div className="sm:my-8 relative sm:animate-fadeIn sm:w-1/4 md:w-2/6 my-2 flex flex-col md:text-center">
-            <h3 className='text-sky-900 dark:text-slate-300 text-2xl my-4'>Where To See More</h3>
-            <div className='flex gap-4 justify-evenly items-center md:justify-center md:gap-8'>
-              <a className='hover:scale-125 transform-all duration-500' href={project.github}>
-                <BsGithub className='fill-sky-900 hover:fill-sky-600 dark:fill-emerald-500 dark:hover:fill-emerald-400' size='2rem'/>
-              </a>
-              <Button route={project.url}/>
+          { project.github &&
+            <div className="sm:my-8 relative sm:animate-fadeIn sm:w-1/4 md:w-2/6 my-2 flex flex-col md:text-center">
+              <h3 className='text-sky-900 dark:text-slate-300 text-2xl my-4'>Where To See More</h3>
+              <div className='flex gap-4 justify-evenly items-center md:justify-center md:gap-8'>
+                <a className='hover:scale-125 transform-all duration-500' href={project.github}>
+                  <BsGithub className='fill-sky-900 hover:fill-sky-600 dark:fill-emerald-500 dark:hover:fill-emerald-400' size='2rem'/>
+                </a>
+                <Button route={project.url}/>
+              </div>
             </div>
-          </div>
+          }
           <div className='sm:my-8 my-2 relative md:animate-fadeFromRight sm:w-1/4 md:w-2/6'>
             <h3 className='text-sky-900 dark:text-slate-300 text-2xl my-4'>Why I Built It</h3>
             <p className='text-sky-900 dark:text-slate-300 text-sm leading-relaxed md:text-lg'>{ project.description }</p>

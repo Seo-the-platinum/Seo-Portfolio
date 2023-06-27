@@ -1,5 +1,6 @@
 import voice from '../../public/images/voice.png';
 import ffvote from '../../public/images/ffvote.png'
+import scribe from '../../public/images/scribe.png'
 
 export const projects = [
     {
@@ -18,5 +19,12 @@ export const projects = [
         tech: ['react','nextjs', 'typescript', 'postgresql', 'prisma', 'tailwind' ],
         title: 'Final Fantasy Fan Vote',
         url: 'https://finalfantasyfanvote.vercel.app/'
+    },
+    {
+        description: `A website to determine once and for all who the best Final Fantasy character and best game are!`,
+        source: scribe,
+        tech: ['react','nextjs', 'typescript', 'postgresql', 'prisma', 'tailwind', 'trpc' ],
+        title: 'Scribe',
+        
     }
 ]
