@@ -21,9 +21,11 @@ export const projects = [
         url: 'https://finalfantasyfanvote.vercel.app/'
     },
     {
-        description: `A website to determine once and for all who the best Final Fantasy character and best game are!`,
+        description: `In the era of Artificial Intelligence, scribe is here to help people looking for a means of expressing their creative writing. 
+        Users can choose a prompt based on a category and write entries that they can share with the rest of the scribe community. Shared entries can be voted on and
+        top performing entries are displayed on the scribe leaderboards.`,
         source: scribe,
-        tech: ['react','nextjs', 'typescript', 'postgresql', 'prisma', 'tailwind', 'trpc' ],
+        tech: ['react','nextjs', 'typescript', 'postgresql', 'prisma', 'tailwind',],
         title: 'Scribe',
         
     }
