@@ -20,7 +20,7 @@ export const projects = [
     source: voice,
     tech: ["react", "typescript", "css"],
     title: "Voice Actor Portfolio",
-    url: "https://marcelovoice.netlify.app/",
+    url: "https://marcelofloresvo.com/",
   },
   {
     description: `A website to determine once and for all who the best Final Fantasy character and best game are! 
